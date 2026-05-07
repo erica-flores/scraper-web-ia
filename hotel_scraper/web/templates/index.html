@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotel Scraper AI</title>
+  <meta name="description" content="Extrae datos de sitios hoteleros con inteligencia artificial. Analiza habitaciones, precios e imágenes con Gemini." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+
+  <!-- ===== SIDEBAR: Chat ===== -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <div class="sidebar-title">
+        <span class="sidebar-icon">🤖</span>
+        <span>Asistente IA</span>
+      </div>
+      <span class="sidebar-hint">Pregunta sobre los hoteles scraped</span>
+    </div>
+
+    <div class="chat-messages" id="chatMessages">
+      <div class="chat-bubble assistant">
+        <div class="bubble-avatar">🤖</div>
+        <div class="bubble-content">
+          ¡Hola! Soy tu asistente de análisis hotelero. Una vez que hagas el scraping, podré responder preguntas como:<br><br>
+          • <em>"¿Cuántas habitaciones tiene Hotel Haedo?"</em><br>
+          • <em>"¿Cuál es el precio más alto encontrado?"</em><br>
+          • <em>"Compará los hoteles"</em><br>
+          • <em>"Revisá las imágenes del primer hotel"</em>
+        </div>
+      </div>
+    </div>
+
+    <form class="chat-form" id="chatForm">
+      <input
+        type="text"
+        id="chatInput"
+        class="chat-input"
+        placeholder="Preguntá algo sobre los hoteles..."
+        autocomplete="off"
+      />
+      <button type="submit" class="chat-send" id="chatSend" title="Enviar">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="22" y1="2" x2="11" y2="13"></line>
+          <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+        </svg>
+      </button>
+    </form>
+  </aside>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="main">
+
+    <!-- Header -->
+    <header class="top-bar">
+      <div class="brand">
+        <div class="brand-icon">🏨</div>
+        <div>
+          <h1 class="brand-title">Hotel Scraper <span class="brand-badge">AI</span></h1>
+          <p class="brand-sub">Potenciado por Gemini + LangGraph</p>
+        </div>
+      </div>
+      <div class="header-stats" id="headerStats" style="display:none">
+        <div class="stat-pill" id="statHotels">0 hoteles</div>
+        <div class="stat-pill" id="statRooms">0 habitaciones</div>
+      </div>
+    </header>
+
+    <!-- Input Panel -->
+    <section class="card input-panel" id="inputPanel">
+      <div class="input-panel-header">
+        <h2 class="section-title">Nueva Extracción</h2>
+        <label class="toggle-wrap">
+          <span class="toggle-label">Modo IA</span>
+          <div class="toggle-switch">
+            <input type="checkbox" id="useLlm" checked />
+            <span class="slider"></span>
+          </div>
+          <span class="toggle-hint" id="llmHint">Activado — Gemini navega y extrae</span>
+        </label>
+      </div>
+
+      <textarea
+        id="urlsInput"
+        class="url-textarea"
+        placeholder="Ingresá las URLs (una por línea):&#10;https://hotelhaedo.com/&#10;https://hotelthepalms.com.ar/"
+        rows="4"
+      ></textarea>
+
+      <div class="input-actions">
+        <div class="output-dir-wrap">
+          <label class="dir-label">Carpeta de salida</label>
+          <input type="text" id="outputDir" class="dir-input" value="./output" />
+        </div>
+        <button class="btn-primary" id="scrapeBtn" onclick="startScrape()">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          Iniciar Extracción
+        </button>
+      </div>
+
+      <!-- Progress -->
+      <div class="progress-wrap" id="progressWrap" style="display:none">
+        <div class="progress-bar-track">
+          <div class="progress-bar-fill" id="progressFill"></div>
+        </div>
+        <div class="progress-log" id="progressLog"></div>
+      </div>
+    </section>
+
+    <!-- Results -->
+    <section id="resultsSection" style="display:none">
+      <div class="results-header">
+        <h2 class="section-title">Resultados</h2>
+        <button class="btn-secondary" onclick="clearResults()">Limpiar</button>
+      </div>
+      <div class="results-grid" id="resultsGrid"></div>
+    </section>
+
+  </main>
+
+  <!-- ===== MODAL: Image viewer ===== -->
+  <div class="modal-overlay" id="imageModal" onclick="closeModal()" style="display:none">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <img id="modalImg" src="" alt="Room image" />
+      <p id="modalCaption" class="modal-caption"></p>
+    </div>
+  </div>
+
+  <script src="/static/js/app.js"></script>
+</body>
+</html>

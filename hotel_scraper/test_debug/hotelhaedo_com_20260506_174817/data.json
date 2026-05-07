@@ -1,0 +1,346 @@
+{
+  "name": "hotelhaedo.com",
+  "url": "https://hotelhaedo.com/",
+  "scraped_at": "2026-05-06T17:48:25.926556",
+  "rooms": [
+    {
+      "name": "HABITACIÓN SINGLE / DOBLE",
+      "description": "La habitación single o doble es ideal para una o dos personas, cuenta con una cama matriominal o dos camas individuales, cuarto de baño con ducha, televisor LED 32’, aire acondicionado, calefacción, teléfono y Wi-Fi. Consultar Disponibilidad HABITACIÓN MATRIMONIAL La habitación matrimonial es ideal para un matrimonio, cuenta con una cama matriominal, cuarto de baño con ducha, televisor LED 32’, aire acondicionado, calefacción, teléfono y Wi-Fi. Consultar Disponibilidad HABITACIÓN TRIPLE La habitación triple esta diseñada para amigos o matrimonio con hijos, cuenta con una cama matrimonial y una",
+      "capacity": null,
+      "prices": [
+        {
+          "amount": 41.0,
+          "currency": "ARS",
+          "period": null,
+          "season": null,
+          "raw_text": "Juan B. Justo 41, (alt. Rivadavia 16.400) Haedo, Bs. As., Argentina+54 11 5291-6734 / 11 5291-6735InicioHabitacionesGaleriaUbicacionPuntos de InteresContactoHABITACIONESAlojamiento Confortable para hu"
+        },
+        {
+          "amount": 41.0,
+          "currency": "ARS",
+          "period": null,
+          "season": null,
+          "raw_text": "Juan B. Justo 41, (alt. Rivadavia 16.400) Haedo, Bs. As., Argentina+54 11 5291-6734 / 11 5291-6735"
+        }
+      ],
+      "shifts": [
+        {
+          "check_in": null,
+          "check_out": "17:00",
+          "min_nights": null,
+          "max_nights": null,
+          "available_from": null,
+          "available_to": null,
+          "raw_text": "Salida de estadia 17hs."
+        }
+      ],
+      "images": [
+        {
+          "url": "https://hotelhaedo.com/images/habitaciones/habitacion-doble.jpg",
+          "filename": "img_001.jpg",
+          "local_path": "test_debug\\hotelhaedo_com_20260506_174817\\images\\habitación_single_doble\\img_001.jpg",
+          "downloaded": true
+        }
+      ],
+      "amenities": [],
+      "raw_html": "<section class=\"section-room bg-white\">\n<div class=\"container\">\n<div class=\"room-wrap-2\">\n<!-- ITEM -->\n<div class=\"room_item-2\">\n<div class=\"img\">\n<a href=\"#\"><img alt=\"\" src=\"images/habitaciones/habitacion-doble.jpg\"/></a>\n</div>\n<div class=\"text\">\n<h2><a href=\"#\">HABITACIÓN SINGLE / DOBLE</a></h2>\n<p>La habitación single o doble es ideal para una o dos personas, cuenta con una cama matriominal o dos camas individuales, cuarto de baño con ducha, televisor LED 32’, aire acondicionado, calefacción, teléfono y Wi-Fi.</p>\n<a class=\"awe-btn awe-btn-13\" href=\"contacto.html\">Consultar Disponibilidad</a>\n</div>\n</div>\n<!-- ITEM -->\n<!-- ITEM -->\n<div class=\"room_item-2\">\n<div class=\"img\">\n<a href=\"#\"><img alt=\"\" src=\"images/habitaciones/habitacion-doble2.jpg\"/></a>\n</div>\n<div class=\"text\">\n<h2><a href=\"#\">HABITACIÓN MATRIMONIAL</a></h2>\n<p>La habitación matrimonial es ideal para un matrimonio, cuenta con una cama matriominal, cuarto de baño con ducha, televisor LED 32’, aire acondicionado, calefacción, teléfono y Wi-Fi.</p>\n<a class=\"awe-btn awe-btn-13\" href=\"contacto.html\">Consultar Disponibilidad</a>\n</div>\n</div>\n<!-- ITEM -->\n<!-- ITEM -->\n<div class=\"room_item-2\">\n<div class=\"img\">\n<a href=\"#\"><img alt=\"\" src=\"images/habitaciones/habitacion-triple1.jpg\"/></a>\n</div>\n<div class=\"text\">\n<h2><a href=\"#\">HABITACIÓN TRIPLE</a></h2>\n<p>La habitación triple esta diseñada para amigos o matrimonio con hijos, cuenta con una cama  matrimonial y una cama de una plaza, cuarto de baño con ducha, televisor LED 32’, aire acondicionado, calefacción, teléfono,  y Wi-Fi.</p>\n<a class=\"awe-btn awe-btn-13\" href=\"contacto.html\">Consultar Disponibilidad</a>\n</div>\n</div>\n<!-- ITEM -->\n<!-- ITEM -->\n<div class=\"room_item-2\">\n<div class=\"img\">\n<a href=\"#\"><img alt=\"\" src=\"images/habitaciones/habitacion-cuadruple1.jpg\"/></a>\n</div>\n<div class=\"text\">\n<h2><a href=\"#\">HABITACIÓN CUÁDRUPLE</a></h2>\n<p>La habitación cuádruple es perfecta para una familia numerosa o un grupo de amigos, dispone de"
+    },
+    {
+      "name": "HABITACIÓN SINGLE / DOBLE",
+      "description": "La habitación single o doble es ideal para una o dos personas, cuenta con una cama matriominal o dos camas individuales, cuarto de baño con ducha, televisor LED 32’, aire acondicionado, calefacción, teléfono y Wi-Fi. Consultar Disponibilidad HABITACIÓN MATRIMONIAL La habitación matrimonial es ideal para un matrimonio, cuenta con una cama matriominal, cuarto de baño con ducha, televisor LED 32’, aire acondicionado, calefacción, teléfono y Wi-Fi. Consultar Disponibilidad HABITACIÓN TRIPLE La habitación triple esta diseñada para amigos o matrimonio con hijos, cuenta con una cama matrimonial y una",
+      "capacity": null,
+      "prices": [
+        {
+          "amount": 41.0,
+          "currency": "ARS",
+          "period": null,
+          "season": null,
+          "raw_text": "Juan B. Justo 41, (alt. Rivadavia 16.400) Haedo, Bs. As., Argentina"
+        },
+        {
+          "amount": 54.0,
+          "currency": "ARS",
+          "period": null,
+          "season": null,
+          "raw_text": "+54 11 5291-6734 / 11 5291-6735"
+        }
+      ],
+      "shifts": [
+        {
+          "check_in": null,
+          "check_out": "17:00",
+          "min_nights": null,
+          "max_nights": null,
+          "available_from": null,
+          "available_to": null,
+          "raw_text": "Salida de estadia 17hs."
+        }
+      ],
+      "images": [
+        {
+          "url": "https://hotelhaedo.com/images/habitaciones/habitacion-doble.jpg",
+          "filename": "img_001.jpg",
+          "local_path": "test_debug\\hotelhaedo_com_20260506_174817\\images\\habitación_single_doble\\img_001.jpg",
+          "downloaded": true
+        }
+      ],
+      "amenities": [],
+      "raw_html": "<div class=\"room-wrap-2\">\n<!-- ITEM -->\n<div class=\"room_item-2\">\n<div class=\"img\">\n<a href=\"#\"><img alt=\"\" src=\"images/habitaciones/habitacion-doble.jpg\"/></a>\n</div>\n<div class=\"text\">\n<h2><a href=\"#\">HABITACIÓN SINGLE / DOBLE</a></h2>\n<p>La habitación single o doble es ideal para una o dos personas, cuenta con una cama matriominal o dos camas individuales, cuarto de baño con ducha, televisor LED 32’, aire acondicionado, calefacción, teléfono y Wi-Fi.</p>\n<a class=\"awe-btn awe-btn-13\" href=\"contacto.html\">Consultar Disponibilidad</a>\n</div>\n</div>\n<!-- ITEM -->\n<!-- ITEM -->\n<div class=\"room_item-2\">\n<div class=\"img\">\n<a href=\"#\"><img alt=\"\" src=\"images/habitaciones/habitacion-doble2.jpg\"/></a>\n</div>\n<div class=\"text\">\n<h2><a href=\"#\">HABITACIÓN MATRIMONIAL</a></h2>\n<p>La habitación matrimonial es ideal para un matrimonio, cuenta con una cama matriominal, cuarto de baño con ducha, televisor LED 32’, aire acondicionado, calefacción, teléfono y Wi-Fi.</p>\n<a class=\"awe-btn awe-btn-13\" href=\"contacto.html\">Consultar Disponibilidad</a>\n</div>\n</div>\n<!-- ITEM -->\n<!-- ITEM -->\n<div class=\"room_item-2\">\n<div class=\"img\">\n<a href=\"#\"><img alt=\"\" src=\"images/habitaciones/habitacion-triple1.jpg\"/></a>\n</div>\n<div class=\"text\">\n<h2><a href=\"#\">HABITACIÓN TRIPLE</a></h2>\n<p>La habitación triple esta diseñada para amigos o matrimonio con hijos, cuenta con una cama  matrimonial y una cama de una plaza, cuarto de baño con ducha, televisor LED 32’, aire acondicionado, calefacción, teléfono,  y Wi-Fi.</p>\n<a class=\"awe-btn awe-btn-13\" href=\"contacto.html\">Consultar Disponibilidad</a>\n</div>\n</div>\n<!-- ITEM -->\n<!-- ITEM -->\n<div class=\"room_item-2\">\n<div class=\"img\">\n<a href=\"#\"><img alt=\"\" src=\"images/habitaciones/habitacion-cuadruple1.jpg\"/></a>\n</div>\n<div class=\"text\">\n<h2><a href=\"#\">HABITACIÓN CUÁDRUPLE</a></h2>\n<p>La habitación cuádruple es perfecta para una familia numerosa o un grupo de amigos, dispone de una cama matrimonial y dos camas de una plaza cucheta, cuarto d"
+    },
+    {
+      "name": "HABITACIÓN SINGLE / DOBLE",
+      "description": "La habitación single o doble es ideal para una o dos personas, cuenta con una cama matriominal o dos camas individuales, cuarto de baño con ducha, televisor LED 32’, aire acondicionado, calefacción, teléfono y Wi-Fi. Consultar Disponibilidad",
+      "capacity": null,
+      "prices": [
+        {
+          "amount": 32.0,
+          "currency": "ARS",
+          "period": null,
+          "season": null,
+          "raw_text": "HABITACIÓN SINGLE / DOBLELa habitación single o doble es ideal para una o dos personas, cuenta con una cama matriominal o dos camas individuales, cuarto de baño con ducha, televisor LED 32’, aire acon"
+        },
+        {
+          "amount": 32.0,
+          "currency": "ARS",
+          "period": null,
+          "season": null,
+          "raw_text": "HABITACIÓN SINGLE / DOBLELa habitación single o doble es ideal para una o dos personas, cuenta con una cama matriominal o dos camas individuales, cuarto de baño con ducha, televisor LED 32’, aire acon"
+        }
+      ],
+      "shifts": [
+        {
+          "check_in": null,
+          "check_out": "17:00",
+          "min_nights": null,
+          "max_nights": null,
+          "available_from": null,
+          "available_to": null,
+          "raw_text": "Salida de estadia 17hs."
+        }
+      ],
+      "images": [
+        {
+          "url": "https://hotelhaedo.com/images/habitaciones/habitacion-doble.jpg",
+          "filename": "img_001.jpg",
+          "local_path": "test_debug\\hotelhaedo_com_20260506_174817\\images\\habitación_single_doble\\img_001.jpg",
+          "downloaded": true
+        }
+      ],
+      "amenities": [],
+      "raw_html": "<div class=\"room_item-2\">\n<div class=\"img\">\n<a href=\"#\"><img alt=\"\" src=\"images/habitaciones/habitacion-doble.jpg\"/></a>\n</div>\n<div class=\"text\">\n<h2><a href=\"#\">HABITACIÓN SINGLE / DOBLE</a></h2>\n<p>La habitación single o doble es ideal para una o dos personas, cuenta con una cama matriominal o dos camas individuales, cuarto de baño con ducha, televisor LED 32’, aire acondicionado, calefacción, teléfono y Wi-Fi.</p>\n<a class=\"awe-btn awe-btn-13\" href=\"contacto.html\">Consultar Disponibilidad</a>\n</div>\n</div>"
+    },
+    {
+      "name": "HABITACIÓN MATRIMONIAL",
+      "description": "La habitación matrimonial es ideal para un matrimonio, cuenta con una cama matriominal, cuarto de baño con ducha, televisor LED 32’, aire acondicionado, calefacción, teléfono y Wi-Fi. Consultar Disponibilidad",
+      "capacity": null,
+      "prices": [
+        {
+          "amount": 32.0,
+          "currency": "ARS",
+          "period": null,
+          "season": null,
+          "raw_text": "La habitación single o doble es ideal para una o dos personas, cuenta con una cama matriominal o dos camas individuales, cuarto de baño con ducha, televisor LED 32’, aire acondicionado, calefacción, t"
+        },
+        {
+          "amount": 32.0,
+          "currency": "ARS",
+          "period": null,
+          "season": null,
+          "raw_text": "HABITACIÓN MATRIMONIALLa habitación matrimonial es ideal para un matrimonio, cuenta con una cama matriominal, cuarto de baño con ducha, televisor LED 32’, aire acondicionado, calefacción, teléfono y W"
+        }
+      ],
+      "shifts": [
+        {
+          "check_in": null,
+          "check_out": "17:00",
+          "min_nights": null,
+          "max_nights": null,
+          "available_from": null,
+          "available_to": null,
+          "raw_text": "Salida de estadia 17hs."
+        }
+      ],
+      "images": [
+        {
+          "url": "https://hotelhaedo.com/images/habitaciones/habitacion-doble2.jpg",
+          "filename": "img_001.jpg",
+          "local_path": "test_debug\\hotelhaedo_com_20260506_174817\\images\\habitación_matrimonial\\img_001.jpg",
+          "downloaded": true
+        }
+      ],
+      "amenities": [],
+      "raw_html": "<div class=\"room_item-2\">\n<div class=\"img\">\n<a href=\"#\"><img alt=\"\" src=\"images/habitaciones/habitacion-doble2.jpg\"/></a>\n</div>\n<div class=\"text\">\n<h2><a href=\"#\">HABITACIÓN MATRIMONIAL</a></h2>\n<p>La habitación matrimonial es ideal para un matrimonio, cuenta con una cama matriominal, cuarto de baño con ducha, televisor LED 32’, aire acondicionado, calefacción, teléfono y Wi-Fi.</p>\n<a class=\"awe-btn awe-btn-13\" href=\"contacto.html\">Consultar Disponibilidad</a>\n</div>\n</div>"
+    },
+    {
+      "name": "HABITACIÓN TRIPLE",
+      "description": "La habitación triple esta diseñada para amigos o matrimonio con hijos, cuenta con una cama matrimonial y una cama de una plaza, cuarto de baño con ducha, televisor LED 32’, aire acondicionado, calefacción, teléfono, y Wi-Fi. Consultar Disponibilidad",
+      "capacity": null,
+      "prices": [
+        {
+          "amount": 32.0,
+          "currency": "ARS",
+          "period": null,
+          "season": null,
+          "raw_text": "La habitación matrimonial es ideal para un matrimonio, cuenta con una cama matriominal, cuarto de baño con ducha, televisor LED 32’, aire acondicionado, calefacción, teléfono y Wi-Fi."
+        },
+        {
+          "amount": 32.0,
+          "currency": "ARS",
+          "period": null,
+          "season": null,
+          "raw_text": "HABITACIÓN TRIPLELa habitación triple esta diseñada para amigos o matrimonio con hijos, cuenta con una cama  matrimonial y una cama de una plaza, cuarto de baño con ducha, televisor LED 32’, aire acon"
+        }
+      ],
+      "shifts": [
+        {
+          "check_in": null,
+          "check_out": "17:00",
+          "min_nights": null,
+          "max_nights": null,
+          "available_from": null,
+          "available_to": null,
+          "raw_text": "Salida de estadia 17hs."
+        }
+      ],
+      "images": [
+        {
+          "url": "https://hotelhaedo.com/images/habitaciones/habitacion-triple1.jpg",
+          "filename": "img_001.jpg",
+          "local_path": "test_debug\\hotelhaedo_com_20260506_174817\\images\\habitación_triple\\img_001.jpg",
+          "downloaded": true
+        }
+      ],
+      "amenities": [],
+      "raw_html": "<div class=\"room_item-2\">\n<div class=\"img\">\n<a href=\"#\"><img alt=\"\" src=\"images/habitaciones/habitacion-triple1.jpg\"/></a>\n</div>\n<div class=\"text\">\n<h2><a href=\"#\">HABITACIÓN TRIPLE</a></h2>\n<p>La habitación triple esta diseñada para amigos o matrimonio con hijos, cuenta con una cama  matrimonial y una cama de una plaza, cuarto de baño con ducha, televisor LED 32’, aire acondicionado, calefacción, teléfono,  y Wi-Fi.</p>\n<a class=\"awe-btn awe-btn-13\" href=\"contacto.html\">Consultar Disponibilidad</a>\n</div>\n</div>"
+    },
+    {
+      "name": "HABITACIÓN CUÁDRUPLE",
+      "description": "La habitación cuádruple es perfecta para una familia numerosa o un grupo de amigos, dispone de una cama matrimonial y dos camas de una plaza cucheta, cuarto de baño con ducha, televisor LED 32’, aire acondicionado, calefacción, teléfono y Wi-Fi. Consultar Disponibilidad",
+      "capacity": null,
+      "prices": [
+        {
+          "amount": 32.0,
+          "currency": "ARS",
+          "period": null,
+          "season": null,
+          "raw_text": "La habitación triple esta diseñada para amigos o matrimonio con hijos, cuenta con una cama  matrimonial y una cama de una plaza, cuarto de baño con ducha, televisor LED 32’, aire acondicionado, calefa"
+        },
+        {
+          "amount": 32.0,
+          "currency": "ARS",
+          "period": null,
+          "season": null,
+          "raw_text": "HABITACIÓN CUÁDRUPLELa habitación cuádruple es perfecta para una familia numerosa o un grupo de amigos, dispone de una cama matrimonial y dos camas de una plaza cucheta, cuarto de baño con ducha, tele"
+        }
+      ],
+      "shifts": [
+        {
+          "check_in": null,
+          "check_out": "17:00",
+          "min_nights": null,
+          "max_nights": null,
+          "available_from": null,
+          "available_to": null,
+          "raw_text": "Salida de estadia 17hs."
+        }
+      ],
+      "images": [
+        {
+          "url": "https://hotelhaedo.com/images/habitaciones/habitacion-cuadruple1.jpg",
+          "filename": "img_001.jpg",
+          "local_path": "test_debug\\hotelhaedo_com_20260506_174817\\images\\habitación_cuádruple\\img_001.jpg",
+          "downloaded": true
+        }
+      ],
+      "amenities": [],
+      "raw_html": "<div class=\"room_item-2\">\n<div class=\"img\">\n<a href=\"#\"><img alt=\"\" src=\"images/habitaciones/habitacion-cuadruple1.jpg\"/></a>\n</div>\n<div class=\"text\">\n<h2><a href=\"#\">HABITACIÓN CUÁDRUPLE</a></h2>\n<p>La habitación cuádruple es perfecta para una familia numerosa o un grupo de amigos, dispone de una cama matrimonial y dos camas de una plaza cucheta, cuarto de baño con ducha, televisor LED 32’, aire acondicionado, calefacción, teléfono y Wi-Fi.</p>\n<a class=\"awe-btn awe-btn-13\" href=\"contacto.html\">Consultar Disponibilidad</a>\n</div>\n</div>"
+    },
+    {
+      "name": "DEPARTAMENTO PARA FAMILIAS",
+      "description": "El Departamento para familias para 2 y 3 personas. Cuenta con todas las comodidades y facilidades para un perfecto descanso. En sus amplios ambientes, dispone una cama matrimonial y una cama de una plaza, cuarto de baño con ducha, aire acondicionado, cocina completa, heladera, microondas y vajilla, Parrilla, Terraza, televisor LED 32’, calefacción, teléfono y Wi-Fi. Consultar Disponibilidad",
+      "capacity": null,
+      "prices": [
+        {
+          "amount": 32.0,
+          "currency": "ARS",
+          "period": null,
+          "season": null,
+          "raw_text": "La habitación cuádruple es perfecta para una familia numerosa o un grupo de amigos, dispone de una cama matrimonial y dos camas de una plaza cucheta, cuarto de baño con ducha, televisor LED 32’, aire "
+        },
+        {
+          "amount": 2.0,
+          "currency": "ARS",
+          "period": null,
+          "season": null,
+          "raw_text": "DEPARTAMENTO PARA FAMILIASEl Departamento para familias para 2 y 3 personas. Cuenta con todas las comodidades y facilidades para un perfecto descanso. En sus amplios ambientes, dispone una cama matrim"
+        }
+      ],
+      "shifts": [
+        {
+          "check_in": null,
+          "check_out": "17:00",
+          "min_nights": null,
+          "max_nights": null,
+          "available_from": null,
+          "available_to": null,
+          "raw_text": "Salida de estadia 17hs."
+        }
+      ],
+      "images": [
+        {
+          "url": "https://hotelhaedo.com/images/habitaciones/habitacion-suite1.jpg",
+          "filename": "img_001.jpg",
+          "local_path": "test_debug\\hotelhaedo_com_20260506_174817\\images\\departamento_para_familias\\img_001.jpg",
+          "downloaded": true
+        }
+      ],
+      "amenities": [],
+      "raw_html": "<div class=\"room_item-2\">\n<div class=\"img\">\n<a href=\"\" style=\" cursor:default;\"><img alt=\"\" src=\"images/habitaciones/habitacion-suite1.jpg\"/></a>\n</div>\n<div class=\"text\">\n<h2><a href=\"\" style=\" cursor:default;\">DEPARTAMENTO PARA FAMILIAS</a></h2>\n<p>El Departamento para familias para 2 y 3 personas. Cuenta con todas las comodidades y facilidades para un perfecto descanso. En sus amplios ambientes, dispone una cama matrimonial y una cama de una plaza, cuarto de baño con ducha, aire acondicionado, cocina completa, heladera, microondas y vajilla, Parrilla, Terraza, televisor LED 32’, calefacción, teléfono y Wi-Fi.</p>\n<a class=\"awe-btn awe-btn-13\" href=\"contacto.html\">Consultar Disponibilidad</a>\n</div>\n</div>"
+    },
+    {
+      "name": "HABITACION MATRIMONIAL NUPCIAL",
+      "description": "Habitacion preparada especialmente para dicho evento con flores, champagne, chocolate. Dispone una cama matrimonial, cuarto de baño con ducha, aire acondicionado, heladera, televisor LED 32’, calefacción, teléfono y Wi-Fi. Salida de estadia 17hs. Consultar Disponibilidad",
+      "capacity": null,
+      "prices": [
+        {
+          "amount": 2.0,
+          "currency": "ARS",
+          "period": null,
+          "season": null,
+          "raw_text": "El Departamento para familias para 2 y 3 personas. Cuenta con todas las comodidades y facilidades para un perfecto descanso. En sus amplios ambientes, dispone una cama matrimonial y una cama de una pl"
+        },
+        {
+          "amount": 32.0,
+          "currency": "ARS",
+          "period": null,
+          "season": null,
+          "raw_text": "HABITACION MATRIMONIAL NUPCIALHabitacion preparada especialmente para dicho evento con flores, champagne, chocolate. Dispone una cama matrimonial, cuarto de baño con ducha, aire acondicionado, helader"
+        }
+      ],
+      "shifts": [
+        {
+          "check_in": null,
+          "check_out": "17:00",
+          "min_nights": null,
+          "max_nights": null,
+          "available_from": null,
+          "available_to": null,
+          "raw_text": "Salida de estadia 17hs."
+        }
+      ],
+      "images": [],
+      "amenities": [],
+      "raw_html": "<div class=\"room_item-2\">\n<div class=\"text\">\n<h2><a href=\"\" style=\" cursor:default;\">HABITACION MATRIMONIAL NUPCIAL</a></h2>\n<p>Habitacion preparada especialmente para dicho evento con flores, champagne, chocolate. Dispone una cama matrimonial, cuarto de baño con ducha, aire acondicionado, heladera, televisor LED 32’, calefacción, teléfono y Wi-Fi.<br/> Salida de estadia 17hs.</p>\n<a class=\"awe-btn awe-btn-13\" href=\"contacto.html\">Consultar Disponibilidad</a>\n</div>\n</div>"
+    }
+  ],
+  "general_shift": {
+    "check_in": null,
+    "check_out": "17:00",
+    "min_nights": null,
+    "max_nights": null,
+    "available_from": null,
+    "available_to": null,
+    "raw_text": "Salida de estadia 17hs."
+  },
+  "source_type": "llm_assisted"
+}

@@ -1,0 +1,17 @@
+requests
+httpx
+aiohttp
+beautifulsoup4
+lxml
+playwright
+pydantic
+pandas
+python-dotenv
+tenacity
+tqdm
+loguru
+Pillow
+google-genai
+langgraph
+flask
+flask-cors
