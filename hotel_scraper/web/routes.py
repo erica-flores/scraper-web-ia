@@ -26,6 +26,19 @@ from web.job_store import (
 bp = Blueprint("main", __name__)
 
 
+# Module-level LLMClient singleton — reuses the shared router/cache.
+_llm_singleton = None
+
+
+def _get_llm_client():
+    """Lazy-init a single LLMClient for chat/observability."""
+    global _llm_singleton
+    if _llm_singleton is None:
+        from llm.llm_client import LLMClient
+        _llm_singleton = LLMClient()
+    return _llm_singleton
+
+
 # ---------------------------------------------------------------------------
 # Helper: run a single URL scrape in background
 # ---------------------------------------------------------------------------
@@ -182,9 +195,7 @@ Instrucciones:
     full_prompt = system_prompt + "\n\n" + "\n".join(turns) + "\nASSISTANT:"
 
     try:
-        from llm.llm_client import LLMClient
-
-        client = LLMClient()
+        client = _get_llm_client()
         reply = client.generate_text(full_prompt)
 
         # Detect if there's an embedded ACTION

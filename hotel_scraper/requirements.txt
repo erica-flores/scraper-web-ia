@@ -12,6 +12,10 @@ tqdm
 loguru
 Pillow
 google-genai
+openai
+pyyaml
 langgraph
 flask
 flask-cors
+pytest
+pytest-mock

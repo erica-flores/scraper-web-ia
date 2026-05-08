@@ -11,6 +11,31 @@ from loguru import logger
 
 from graph.state import ScraperState
 
+# Module-level LLMClient singleton — reuses the shared router/cache across all nodes.
+_llm_singleton = None
+
+
+def _get_llm_client():
+    """Lazy-init a single LLMClient for the whole module."""
+    global _llm_singleton
+    if _llm_singleton is None:
+        from llm.llm_client import LLMClient
+        _llm_singleton = LLMClient()
+    return _llm_singleton
+
+
+def _llm_meta_suffix() -> str:
+    """Return ' (via provider:model[, cached])' for the latest LLM call, or empty."""
+    client = _llm_singleton
+    if client is None:
+        return ""
+    last = client.last_response
+    if last is None:
+        return ""
+    tag = "cached" if last.cached else f"{last.latency_ms}ms"
+    return f" (via {last.provider}:{last.model}, {tag})"
+
+
 # ---------------------------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------------------------
@@ -132,7 +157,6 @@ def node_parse_and_extract(state: ScraperState) -> dict:
 # ---------------------------------------------------------------------------
 
 def node_llm_navigate(state: ScraperState) -> dict:
-    from llm.llm_client import LLMClient
     from llm.prompts import LINK_NAVIGATION_PROMPT
 
     soup = state["soup"]
@@ -155,9 +179,9 @@ def node_llm_navigate(state: ScraperState) -> dict:
     links_str = "\n".join(links[:60])
 
     try:
-        client = LLMClient()
+        client = _get_llm_client()
         prompt = LINK_NAVIGATION_PROMPT.format(links=links_str)
-        result = client.extract_json(prompt)
+        result = client.extract_json_quick(prompt)
 
         chosen_href = result.get("next_url") if isinstance(result, dict) else None
         reason = result.get("reason", "") if isinstance(result, dict) else ""
@@ -165,7 +189,7 @@ def node_llm_navigate(state: ScraperState) -> dict:
         if chosen_href:
             # Resolve to absolute URL — handles both relative paths and anchors
             next_url = urljoin(base_url, chosen_href)
-            logs = _log(state, f"[4/7] LLM → '{chosen_href}' ({reason})")
+            logs = _log(state, f"[4/7] LLM → '{chosen_href}' ({reason}){_llm_meta_suffix()}")
 
             html = _fetch_html(next_url, site_type)
             parsed = _parse_page(html, next_url)
@@ -191,7 +215,6 @@ def node_llm_navigate(state: ScraperState) -> dict:
 # ---------------------------------------------------------------------------
 
 def node_llm_extract(state: ScraperState) -> dict:
-    from llm.llm_client import LLMClient
     from llm.prompts import ROOM_EXTRACTION_PROMPT
 
     html = state.get("html", "")
@@ -199,7 +222,7 @@ def node_llm_extract(state: ScraperState) -> dict:
     truncated = html[:18000]
 
     try:
-        client = LLMClient()
+        client = _get_llm_client()
         prompt = ROOM_EXTRACTION_PROMPT.format(html=truncated, base_url=base_url)
         result = client.extract_json(prompt)
 
@@ -226,7 +249,7 @@ def node_llm_extract(state: ScraperState) -> dict:
 
         return {
             "raw_rooms": raw_rooms,
-            "log_messages": _log(state, f"[4b/7] LLM extract: {len(raw_rooms)} rooms"),
+            "log_messages": _log(state, f"[4b/7] LLM extract: {len(raw_rooms)} rooms{_llm_meta_suffix()}"),
         }
     except Exception as e:
         logger.error(f"LLM extract failed: {e}")
@@ -374,13 +397,12 @@ def _llm_discover_selector(html: str, url: str) -> str | None:
     Called when all fixed selectors in ROOM_SELECTORS return nothing.
     Returns a CSS selector string, or None if the LLM can't find one.
     """
-    from llm.llm_client import LLMClient
     from llm.prompts import ROOM_SELECTOR_DISCOVERY_PROMPT
 
     try:
-        client = LLMClient()
+        client = _get_llm_client()
         prompt = ROOM_SELECTOR_DISCOVERY_PROMPT.format(html=html[:8000])
-        result = client.extract_json(prompt)
+        result = client.extract_json_quick(prompt)
 
         if isinstance(result, dict):
             selector = result.get("selector")

@@ -1,0 +1,57 @@
+cache:
+  enabled: true
+  db_path: .cache/llm_cache.sqlite
+  ttl_hours: 24
+
+chains:
+  extraction_long:
+    - provider: gemini
+      model: gemini-2.5-flash-lite
+      api_key_env: GEMINI_API_KEY
+      max_input_tokens: 900000
+    - provider: openai_compatible
+      model: llama-3.3-70b-versatile
+      base_url_env: GROQ_BASE_URL
+      api_key_env: GROQ_API_KEY
+      max_input_tokens: 120000
+    - provider: gemini
+      model: gemini-2.5-flash
+      api_key_env: GEMINI_API_KEY
+      max_input_tokens: 900000
+
+  quick:
+    - provider: openai_compatible
+      model: llama-3.3-70b
+      base_url_env: CEREBRAS_BASE_URL
+      api_key_env: CEREBRAS_API_KEY
+      max_input_tokens: 7000
+    - provider: openai_compatible
+      model: llama-3.3-70b-versatile
+      base_url_env: GROQ_BASE_URL
+      api_key_env: GROQ_API_KEY
+      max_input_tokens: 120000
+    - provider: gemini
+      model: gemini-2.5-flash-lite
+      api_key_env: GEMINI_API_KEY
+      max_input_tokens: 900000
+
+  chat:
+    - provider: gemini
+      model: gemini-2.5-flash-lite
+      api_key_env: GEMINI_API_KEY
+      max_input_tokens: 900000
+    - provider: openai_compatible
+      model: llama-3.3-70b-versatile
+      base_url_env: GROQ_BASE_URL
+      api_key_env: GROQ_API_KEY
+      max_input_tokens: 120000
+
+# OpenRouter (deepseek-v3:free / llama-3.3:free) — opcional.
+# Free tier sin tarjeta: 50 RPD, 20 RPM. Si cargás $10 una vez, sube a 1000 RPD permanente.
+# Para activarlo: definí OPENROUTER_API_KEY en .env y descomentá un slot debajo del chain
+# correspondiente. Ejemplo (extraction_long):
+#   - provider: openai_compatible
+#     model: deepseek/deepseek-chat-v3:free
+#     base_url_env: OPENROUTER_BASE_URL
+#     api_key_env: OPENROUTER_API_KEY
+#     max_input_tokens: 60000
